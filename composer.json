@@ -1,0 +1,38 @@
+{
+    "name": "rendyep/winata-demo",
+    "type": "demo",
+    "description": "Content Management System?",
+    "keywords": [
+        "CMS",
+        "Content Management System"
+    ],
+    "homepage": "https://github.com/rendyep/winata-demo",
+    "authors": [
+        {
+            "name": "Rendy Eko Prastiyo",
+            "email": "rendyekoprastiyo@gmail.com",
+            "homepage": "https://github.com/rendyep",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "rendyekoprastiyo@gmail.com",
+        "source": "https://github.com/rendyep/winata-demo"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "rendyep/winata": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rendyep/winata"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WinataApp\\": "src/WinataApp"
+        }
+    }
+}
