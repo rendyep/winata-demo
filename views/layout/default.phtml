@@ -1,9 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="id">
     <head>
-        <title><?php echo $this->getTitle(); ?></title>
+        <title>
+            <?php
+                // title can be retrieved via property 'title' or method 'getTitle()'
+                echo $this->getTitle();
+                //~ echo $this->title;
+            ?>
+        </title>
     </head>
     <body>
-        <?php echo $this->content; ?>
+        <?php
+            // content can be retrieved via property 'content' or method 'getContent()'
+            echo $this->getContent();
+            //~ echo $this->content;
+        ?>
     </body>
 </html>
