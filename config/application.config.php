@@ -23,7 +23,7 @@ return array(
         )
     ),
     'view_manager' => array(
-        'template_path' => __DIR__ . '/../views/template',
+        'layout_path' => __DIR__ . '/../views/layout',
         'module_path' => __DIR__ . '/../views/module'
     )
 );
