@@ -11,8 +11,12 @@ class IndexController extends AbstractActionController
     public function indexAction()
     {
         $view = $this->serviceManager->getService('view');
-        $view->setProperties(array('a' => 'b'));
-        $view->c = 'd';
+        $view->setTitleSeparator('-');
+        $view->setTitle('Demo App');
+        $view->prependTitle('Winata');
+
+        // this output will be ignored
+        echo 'tessssssss';
 
         return $view;
     }
