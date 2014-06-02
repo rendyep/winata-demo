@@ -13,7 +13,8 @@ return array(
         'modules' => array(
             'home' => array(
                 'controllers' => array(
-                    'index' => 'Controller\Home\Index'
+                    'index' => 'Controller\Home\Index',
+                    'about' => 'Controller\Home\About'
                 ),
                 'default' => array(
                     'controller' => 'index',
@@ -27,11 +28,35 @@ return array(
             'action' => 'index'
         ),
         'invokables' => array(
-            'Controller\Home\Index' => '\WinataApp\Home\IndexController'
+            'Controller\Home\Index' => '\WinataApp\Home\IndexController',
+            'Controller\Home\About' => '\WinataApp\Home\AboutController'
         )
     ),
     'view_manager' => array(
         'layout_path' => __DIR__ . '/../views/layout',
         'module_path' => __DIR__ . '/../views/module'
+    ),
+    'navigation' => array(
+        'home' => array(
+            'label' => 'Home',
+            'child' => array(
+                'about' => array(
+                    'label' => 'about',
+                    'resource' => array(
+                        'module' => 'home',
+                        'controller' => 'about',
+                        'action' => 'index'
+                    )
+                ),
+                'contact-us' => array(
+                    'label' => 'Contact Us',
+                    'resource' => array(
+                        'module' => 'home',
+                        'controller' => 'about',
+                        'action' => 'contact-us'
+                    )
+                )
+            )
+        ),
     )
 );
