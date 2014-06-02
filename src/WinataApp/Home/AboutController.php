@@ -14,18 +14,26 @@ use Winata\Mvc\Controller\AbstractActionController;
 use Winata\ServiceManager\ServiceManagerInterface;
 use Winata\Service\View\View;
 
-class IndexController extends AbstractActionController
+class AboutController extends AbstractActionController
 {
     public function indexAction()
     {
         $view = $this->serviceManager->getService('view');
         $view->setTitleSeparator('-');
-        $view->setTitle('Home');
+        $view->setTitle('About');
         $view->prependTitle('Demo App');
         $view->prependTitle('Winata');
 
-        // this output will be ignored
-        echo 'tessssssss';
+        return $view;
+    }
+
+    public function contactUsAction()
+    {
+        $view = $this->serviceManager->getService('view');
+        $view->setTitleSeparator('-');
+        $view->setTitle('Contact Us');
+        $view->prependTitle('Demo App');
+        $view->prependTitle('Winata');
 
         return $view;
     }
