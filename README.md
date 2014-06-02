@@ -10,4 +10,4 @@ Hello World!
 
 Demo
 ----
-[http://demo-winata.rhcloud.com](http://demo-winata.rhcloud.com)
+[http://demo-winata.rhcloud.com](http://rendyep.github.io/winata-demo.html)
