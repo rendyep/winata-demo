@@ -1,7 +1,7 @@
 <?php
 
 /**
-* Winata Demo (https://github.com/rendyep/winata)
+* Winata Demo (https://github.com/rendyep/winata-demo)
 *
 * @link https://github.com/rendyep/winata-demo for the canonical source repository
 * @copyright Copyright (c) 20014 Winata Technology Inc. (https://github.com/rendyep/winata)
