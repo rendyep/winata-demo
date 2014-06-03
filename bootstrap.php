@@ -8,7 +8,7 @@
 * @license https://github.com/rendyep/winata-demo/blob/master/LICENCE
 */
 
-use Winata\ServiceManager\ServiceManager;
+use Winata\Service\ServiceManager;
 
 $loader = require __DIR__ . '/vendor/autoload.php';
 
