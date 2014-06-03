@@ -28,8 +28,8 @@ return array(
             'action' => 'index'
         ),
         'invokables' => array(
-            'Controller\Home\Index' => '\WinataApp\Home\IndexController',
-            'Controller\Home\About' => '\WinataApp\Home\AboutController'
+            'Controller\Home\Index' => '\WinataApp\Module\Home\IndexController',
+            'Controller\Home\About' => '\WinataApp\Module\Home\AboutController'
         )
     ),
     'view_manager' => array(
